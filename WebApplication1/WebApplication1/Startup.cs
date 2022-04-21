@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication1.ExtenMiddleware;
 
 namespace WebApplication1
 {
@@ -30,11 +31,13 @@ namespace WebApplication1
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
+                endpoints.MapGet("/macdinh", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+
+            app.UseMiddleware<ExtenMiddle>();
 
             app.Use(async (context, next) =>
             {
@@ -50,6 +53,12 @@ namespace WebApplication1
                 await context.Response.WriteAsync("Hello World4");
             });
 
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World5");
+            });
+
+            app.UseMiddleSimple();
 
         }
     }

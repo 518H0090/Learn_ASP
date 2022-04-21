@@ -1,0 +1,7 @@
+Link: https://www.youtube.com/watch?v=gxu1fsHGvMo&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=12
+
+----
+Web API - AddControllers
+Razor pages - AddRazorPages
+Model View Controller - AddControllersWithViews
+Require All - AddMVC

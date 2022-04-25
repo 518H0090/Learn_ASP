@@ -28,10 +28,10 @@ namespace WebApplication5.Controllers
 
         //Để coi lại
 
-        //public ViewResult NewExtenView()
-        //{
-        //    //relative path
-        //    return View("~/../StrangeView");
-        //}
+        public ViewResult NewExtenView()
+        {
+            //relative path
+            return View("../../ExtenSpecial/StrangeView");
+        }
     }
 }

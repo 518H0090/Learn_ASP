@@ -8,5 +8,10 @@ namespace WebApplication6.Controllers
         {
             return View();
         }
+
+        public IActionResult IndexStatement()
+        {
+            return View();
+        }
     }
 }
